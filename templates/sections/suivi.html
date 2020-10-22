@@ -1,0 +1,32 @@
+<section id="details">
+    <table id="tableDateCode" style="border: none">
+        <tr>
+            <td><span id="codeLabel"> code de bordreau: </span>{{ code }}</td>
+        </tr>
+    </table>
+    <table id="tableDetails">
+        <tr>
+            <th>Operation</th>
+            <th>libille</th>
+            <th>date</th>
+            <th>etat</th>
+        </tr>
+
+        {% for operation in operations %}
+            <tr>
+                <td> Operation {{ operation[0] }} </td>
+                <td> {{ operation[1][0] }} </td>
+                <td> {{ operation[1][1] }} </td>
+                <td>
+                    {% if operation[1][2]=='v' %}
+                        validée
+                    {% else %}
+                        modifiée
+                    {% endif %}
+                </td>
+            </tr>
+
+        {% endfor %}
+    </table>
+
+</section>

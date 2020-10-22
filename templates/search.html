@@ -1,0 +1,14 @@
+{% extends "base/base.html" %}
+
+{% block body %}
+    {% include "sections/nav.html" %}
+    {% include "sections/table.html" %}
+    {% include "sections/searchsection.html" %}
+    {% include "sections/contact.html" %}
+{% endblock %}
+
+<script>
+    focusMethod = function getFocus() {
+        document.getElementById("services").focus();
+    }
+</script>

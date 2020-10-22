@@ -1,0 +1,77 @@
+
+            .commment {
+                float: left;
+            }
+
+            #inputComment {
+                border: solid rgba(144, 144, 144, 0.5);
+                border-radius: 15px;
+                padding-left: 3px;
+                font-weight: lighter;
+                width: 100%;
+                height: 100px;
+            }
+
+            #inputComment:hover {
+                border: solid #f05f40;
+                border-radius: 15px;
+                width: 100%;
+                height: 100px;
+            }
+
+            #inputComment:focus {
+                border: none;
+                border-radius: 15px;
+            }
+
+            #dateLabel, #codeLabel {
+                font-family: sans-serif;
+                font-size: 20px;
+                padding-left: 5px;
+                font-weight: bold;
+            }
+
+            #tableDateCode td {
+                border: solid white;
+            }
+
+            #tableDetails {
+                width: 100%;
+                margin-top: 10px;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+
+            #tableDetails th {
+                height: 80px;
+                border: solid white 4px;
+                border-radius: 10px;
+                background: #f05f40;
+                color: white;
+            }
+
+            #tableDetails td {
+                height: auto;
+                padding: 10px;
+                border-color: white;
+                border-bottom: solid #f05f40 4px;
+            }
+
+            #tableDetails button {
+                position: relative;
+                border: solid #f05f40;
+                border-radius: 15px;
+                background: #f05f40;
+                color: white;
+                box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+            }
+
+            #tableDetails button:hover {
+                position: relative;
+                border: solid white;
+                border-radius: 15px;
+                background: white;
+                color: #f05f40;
+                box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+            }

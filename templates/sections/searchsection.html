@@ -1,0 +1,23 @@
+<section id="services" style="height: 518px;margin-left: -40px;margin-top: 86px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">ENTER YOUR CODE</h2>
+                <hr class="my-4">
+            </div>
+        </div>
+    </div>
+    <form method="post" action="/search">
+        <input class="d-inline" type="text"
+               style="margin-left: 37%;border: solid rgb(240,95,64);border-radius: 15px;width: 284px;height: 36px;"
+               placeholder="enter the code" name="searchCode">
+        <i class="fa fa-search" style="color: rgb(240,95,64);font-size: 40px;padding-left: 13px;"></i>
+    </form>
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {{ messages[0] }}
+            {% endif %}
+        {% endwith %}
+</section>
+
+

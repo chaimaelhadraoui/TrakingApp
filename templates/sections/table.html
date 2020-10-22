@@ -1,0 +1,38 @@
+<section id="result">
+    <table id="tableDateCode" style="border: none">
+        <tr>
+            <td><span id="dateLabel">date de depart: </span> {{ date }}</td>
+        </tr>
+        <tr>
+            <td><span id="codeLabel"> code de bordreau: </span>{{ bordreau[0] }}</td>
+        </tr>
+    </table>
+    <table id="tableDetails">
+        <tr>
+            <th>les produits:</th>
+            <th>activites:</th>
+            <th>status:</th>
+            <th>commentaire:</th>
+        </tr>
+        <tr>
+            <td>
+                {% for produit in produits %}
+                    {{ produit[2] }} <br>
+                {% endfor %}
+            </td>
+            <td>
+                <a href="/details/bordreau={{ bordreau[9] }}&code={{ bordreau[0] }}">
+                    <button>
+                        suivre
+                    </button>
+                </a>
+            </td>
+            <td>{{ bordreau[4] }}</td>
+            <td>
+                <form method="post" action="addComment">
+                    <input id="inputComment" type="text" name="comment" placeholder="commenter nos service">
+                </form>
+            </td>
+        </tr>
+    </table>
+</section>
